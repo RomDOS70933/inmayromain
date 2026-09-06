@@ -1,11 +1,40 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import '@fontsource/berkshire-swash';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import MainPageInfo from '../components/MainPageInfo.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<title>Inma + Romain</title>
+	</head>
+	<body>
+		
+		<MainPageInfo />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		background: antiquewhite;
+	}
+	
+	.savethedateimg {
+		width: 50%;
+		max-width: 1200px;
+		height: auto;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: clamp(3rem, 8vw, 7rem);
+	}
+</style>

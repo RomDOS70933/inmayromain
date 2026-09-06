@@ -1,0 +1,64 @@
+---
+
+---
+
+<main class="wedding-home">
+	<div class="content">
+		<h1>Inma + Romain</h1>
+
+		<p>Preparamos algo especial...</p>
+		<p><em>Nous préparons quelque chose de spécial...</em></p>
+		<p class="hourglass">⏳</p>
+
+		<p class="soon">La web llega pronto - <em>Le site arrive bientôt</em></p>
+	</div>
+</main>
+
+<style>
+	.wedding-home {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		font-family: "Berkshire Swash", cursive;
+		color: #ff6f24;
+	}
+
+	.content {
+		width: 75%;
+	}
+
+	.hourglass {
+		display: inline-block;
+		animation: hourglass 4s ease-in-out infinite;
+	}
+
+	@keyframes hourglass {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		15% {
+			transform: rotate(180deg);
+		}
+
+		100% {
+			transform: rotate(180deg);
+		}
+	}
+
+	h1 {
+		font-size: clamp(3rem, 8vw, 7rem);
+		margin: 0 0 2rem;
+	}
+
+	p {
+		font-size: clamp(1.5rem, 3vw, 2.5rem);
+		margin: 0 0 1rem;
+	}
+
+	.soon {
+		font-size: clamp(1rem, 2vw, 1.5rem);
+	}
+</style>
